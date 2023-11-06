@@ -1,0 +1,596 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='US_youtube_trending_data' inline='true' name='federated.15jvu9b1ru02ih1g0gu4l0zq6d9j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='US_youtube_trending_data' name='textscan.0ns9x8b0rl9jni1gdmnck1jfro42'>
+            <connection class='textscan' directory='C:/Users/Antonio/Desktop' filename='US_youtube_trending_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ns9x8b0rl9jni1gdmnck1jfro42' name='US_youtube_trending_data.csv' table='[US_youtube_trending_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='datetime' name='publishedAt' ordinal='2' />
+            <column datatype='string' name='channelId' ordinal='3' />
+            <column datatype='string' name='channelTitle' ordinal='4' />
+            <column datatype='integer' name='categoryId' ordinal='5' />
+            <column datatype='datetime' name='trending_date' ordinal='6' />
+            <column datatype='string' name='tags' ordinal='7' />
+            <column datatype='integer' name='view_count' ordinal='8' />
+            <column datatype='integer' name='likes' ordinal='9' />
+            <column datatype='integer' name='dislikes' ordinal='10' />
+            <column datatype='integer' name='comment_count' ordinal='11' />
+            <column datatype='string' name='thumbnail_link' ordinal='12' />
+            <column datatype='boolean' name='comments_disabled' ordinal='13' />
+            <column datatype='boolean' name='ratings_disabled' ordinal='14' />
+            <column datatype='string' name='description' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ns9x8b0rl9jni1gdmnck1jfro42' name='US_youtube_trending_data.csv' table='[US_youtube_trending_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='video_id' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='datetime' name='publishedAt' ordinal='2' />
+            <column datatype='string' name='channelId' ordinal='3' />
+            <column datatype='string' name='channelTitle' ordinal='4' />
+            <column datatype='integer' name='categoryId' ordinal='5' />
+            <column datatype='datetime' name='trending_date' ordinal='6' />
+            <column datatype='string' name='tags' ordinal='7' />
+            <column datatype='integer' name='view_count' ordinal='8' />
+            <column datatype='integer' name='likes' ordinal='9' />
+            <column datatype='integer' name='dislikes' ordinal='10' />
+            <column datatype='integer' name='comment_count' ordinal='11' />
+            <column datatype='string' name='thumbnail_link' ordinal='12' />
+            <column datatype='boolean' name='comments_disabled' ordinal='13' />
+            <column datatype='boolean' name='ratings_disabled' ordinal='14' />
+            <column datatype='string' name='description' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publishedAt</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[publishedAt]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>publishedAt</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channelId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channelId]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>channelId</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channelTitle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channelTitle]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>channelTitle</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categoryId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[categoryId]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>categoryId</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[trending_date]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>trending_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>view_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[view_count]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>view_count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dislikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dislikes]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>dislikes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[thumbnail_link]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>thumbnail_link</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[comments_disabled]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>comments_disabled</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratings_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[ratings_disabled]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>ratings_disabled</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[US_youtube_trending_data.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Correlation Coefficient' datatype='real' name='[Calculation_624030040313372672]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([view_count], [likes])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='US_youtube_trending_data.csv' datatype='table' name='[__tableau_internal_object_id__].[US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF]' role='measure' type='quantitative' />
+      <column caption='Category Id' datatype='integer' name='[categoryId]' role='dimension' type='ordinal' />
+      <column caption='Channel Id' datatype='string' name='[channelId]' role='dimension' type='nominal' />
+      <column caption='Channel Title' datatype='string' name='[channelTitle]' role='dimension' type='nominal' />
+      <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+      <column caption='Comments Disabled' datatype='boolean' name='[comments_disabled]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Published At' datatype='datetime' name='[publishedAt]' role='dimension' type='ordinal' />
+      <column caption='Ratings Disabled' datatype='boolean' name='[ratings_disabled]' role='dimension' type='nominal' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='Thumbnail Link' datatype='string' name='[thumbnail_link]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Trending Date' datatype='datetime' name='[trending_date]' role='dimension' type='ordinal' />
+      <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='US_youtube_trending_data.csv' id='US_youtube_trending_data.csv_2BD78069E98746ACB6C5BCC0BF6900EF'>
+            <properties context=''>
+              <relation connection='textscan.0ns9x8b0rl9jni1gdmnck1jfro42' name='US_youtube_trending_data.csv' table='[US_youtube_trending_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='video_id' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='datetime' name='publishedAt' ordinal='2' />
+                  <column datatype='string' name='channelId' ordinal='3' />
+                  <column datatype='string' name='channelTitle' ordinal='4' />
+                  <column datatype='integer' name='categoryId' ordinal='5' />
+                  <column datatype='datetime' name='trending_date' ordinal='6' />
+                  <column datatype='string' name='tags' ordinal='7' />
+                  <column datatype='integer' name='view_count' ordinal='8' />
+                  <column datatype='integer' name='likes' ordinal='9' />
+                  <column datatype='integer' name='dislikes' ordinal='10' />
+                  <column datatype='integer' name='comment_count' ordinal='11' />
+                  <column datatype='string' name='thumbnail_link' ordinal='12' />
+                  <column datatype='boolean' name='comments_disabled' ordinal='13' />
+                  <column datatype='boolean' name='ratings_disabled' ordinal='14' />
+                  <column datatype='string' name='description' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='US_youtube_trending_data' name='federated.15jvu9b1ru02ih1g0gu4l0zq6d9j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15jvu9b1ru02ih1g0gu4l0zq6d9j'>
+            <column caption='Correlation Coefficient' datatype='real' name='[Calculation_624030040313372672]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CORR([view_count], [likes])' />
+            </column>
+            <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+            <column-instance column='[video_id]' derivation='None' name='[none:video_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[likes]' derivation='Sum' name='[sum:likes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[view_count]' derivation='Sum' name='[sum:view_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_624030040313372672]' derivation='User' name='[usr:Calculation_624030040313372672:qk]' pivot='key' type='quantitative' />
+            <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+            <column caption='View Count' datatype='integer' name='[view_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.15jvu9b1ru02ih1g0gu4l0zq6d9j].[none:video_id:nk]' />
+              <lod column='[federated.15jvu9b1ru02ih1g0gu4l0zq6d9j].[usr:Calculation_624030040313372672:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.15jvu9b1ru02ih1g0gu4l0zq6d9j].[sum:likes:qk]</rows>
+        <cols>[federated.15jvu9b1ru02ih1g0gu4l0zq6d9j].[sum:view_count:qk]</cols>
+      </table>
+      <simple-id uuid='{4373A1F4-1B9C-436B-8FAF-5BB2FDFAA434}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6BE90960-24DE-4BCD-ACB2-A2D63209571C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      7/PKcAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
