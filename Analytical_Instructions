@@ -1,0 +1,36 @@
+Analytical Instructions
+Introduction
+This document provides a comprehensive step-by-step guide on the analysis of the correlation between views and likes on YouTube videos using Tableau.
+
+Objectives
+The primary goal of this analysis is to understand if there's a significant correlation between the number of views a YouTube video receives and the number of likes it garners.
+
+Data Source
+Our dataset has been sourced from Kaggle's 'YouTube Trending Video Dataset', which provides daily updates on trending video statistics. The key attributes of interest in this dataset are 'views', 'likes', 'dislikes', and 'comment_count'.
+
+Methodology
+The analysis is broken down into the following steps:
+
+1. Setting Up Tableau
+Downloading and installing Tableau Desktop.
+Familiarization with Tableau's interface and features.
+2. Data Importing
+Loading the dataset into Tableau.
+Initial review of data types and fields.
+3. Data Cleaning
+Filtering out unnecessary rows or null values.
+Renaming fields for clarity.
+Creating calculated fields as necessary.
+4. Visualizing Correlation
+Creating a scatter plot with 'views' on the x-axis and 'likes' on the y-axis.
+Adjusting visual elements for clarity.
+5. Adding a Trend Line
+Including a linear trend line in the scatter plot to visualize correlation.
+6. Calculating the Correlation Coefficient
+Creating a calculated field for the Pearson correlation coefficient.
+Displaying the correlation coefficient on the visualization.
+7. Further Exploration
+Considering other visualizations like histograms to understand distributions.
+Investigating secondary metrics for deeper insights.
+Results Interpretation
+A brief explanation of how to interpret the scatter plot, trend line, and correlation coefficient in the context of YouTube video analytics.
